@@ -135,3 +135,4 @@ C:\Users\Ebrahim.Mohsen\source\repos\User managment system\User managment system
 C:\Users\Ebrahim.Mohsen\source\repos\User managment system\User managment system\obj\Debug\net8.0\User managment system.genruntimeconfig.cache
 C:\Users\Ebrahim.Mohsen\source\repos\User managment system\User managment system\obj\Debug\net8.0\ref\User managment system.dll
 C:\Users\Ebrahim.Mohsen\source\repos\User managment system\User managment system\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ebrahim.Mohsen\source\repos\User managment system\User managment system\obj\Debug\net8.0\User managment system.sourcelink.json

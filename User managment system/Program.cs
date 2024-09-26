@@ -1,14 +1,18 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using User_managment_system.Data;
 using User_managment_system.Models;
 using User_managment_system.Policies;
+using User_managment_system.Policies.PolicyForGet;
+using User_managment_system.Policies.PolicyForPost;
 using User_managment_system.Repositories;
 using User_managment_system.Repositories.Interfaces;
+
+//https://isriramkumarm.medium.com/create-a-custom-authorization-policy-in-asp-net-core-in-3-steps-1488b51264d0
+//perfect site for walking through the custom policy
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +23,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddScoped<IUserRepo,UserRepo>();
+
 builder.Services.AddSingleton<IAuthorizationHandler, GetPolicyHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler, PostPolicyHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler, PutPolicyHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler, DeletePolicyHandler>();
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -77,12 +85,34 @@ builder.Services
 
 builder.Services.AddAuthorization(options =>
 {
-    //will add a new custom policy here
-    options.AddPolicy("getPolicy", policy =>
+    //added all the custom policies for the endpoints access 
+
+    options.AddPolicy("GetPolicy", policy =>
     {
         policy.AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme);
         policy.RequireAuthenticatedUser();
         policy.Requirements.Add(new GetPermission());
+    });
+
+    options.AddPolicy("PostPolicy", policy =>
+    {
+        policy.AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme);
+        policy.RequireAuthenticatedUser();
+        policy.Requirements.Add(new PostPermission());
+    });
+
+    options.AddPolicy("PutPolicy", policy =>
+    {
+        policy.AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme);
+        policy.RequireAuthenticatedUser();
+        policy.Requirements.Add(new PutPermission());
+    });
+
+    options.AddPolicy("DeletePolicy", policy =>
+    {
+        policy.AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme);
+        policy.RequireAuthenticatedUser();
+        policy.Requirements.Add(new DeletePermission());
     });
 });
 

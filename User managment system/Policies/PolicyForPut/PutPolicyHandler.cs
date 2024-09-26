@@ -4,9 +4,9 @@ using User_managment_system.Models;
 
 namespace User_managment_system.Policies
 {
-    public class GetPolicyHandler : AuthorizationHandler<GetPermission>
+    public class PutPolicyHandler : AuthorizationHandler<PutPermission>
     {
-        protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, GetPermission requirement)
+        protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, PutPermission requirement)
         {
             var GroupClaims = context.User.Claims.FirstOrDefault(x => x.Type == "groupId");
 
@@ -20,7 +20,7 @@ namespace User_managment_system.Policies
 
             var group = DbContext.Groups.FirstOrDefault(g => g.Id == groupId);
 
-            if(group.Validations.FirstOrDefault(x => x == "get") != null)
+            if(group.Validations.FirstOrDefault(x => x == "put") != null)
             {
                 context.Succeed(requirement);
                 Console.WriteLine("User has permission get");
