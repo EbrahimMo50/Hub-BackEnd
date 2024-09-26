@@ -23,7 +23,7 @@ namespace User_managment_system.Policies
             if(group.Validations.FirstOrDefault(x => x == "delete") != null)
             {
                 context.Succeed(requirement);
-                Console.WriteLine("User has permission get");
+                Console.WriteLine("User has permission delete");
             }
 
             return Task.CompletedTask;

@@ -23,7 +23,7 @@ namespace User_managment_system.Policies.PolicyForPost
             if(group.Validations.FirstOrDefault(x => x == "post") != null)
             {
                 context.Succeed(requirement);
-                Console.WriteLine("User has permission get");
+                Console.WriteLine("User has permission post");
             }
 
             return Task.CompletedTask;

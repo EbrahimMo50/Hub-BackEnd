@@ -32,8 +32,9 @@ namespace User_managment_system.Controllers
             _repo.Register(user);
             return Ok();
         }
+
         [HttpGet("test")]
-        [Authorize(Policy = "getPolicy")]
+        [Authorize(Policy = "GetPolicy,PutPolicy,DeletePolicy")]
         public IActionResult test()
         {
             return Ok();

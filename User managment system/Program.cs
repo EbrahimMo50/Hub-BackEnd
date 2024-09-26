@@ -14,6 +14,13 @@ using User_managment_system.Repositories.Interfaces;
 //https://isriramkumarm.medium.com/create-a-custom-authorization-policy-in-asp-net-core-in-3-steps-1488b51264d0
 //perfect site for walking through the custom policy
 
+
+//to make a custom policy we first create a class for the requirment
+//then create a handler that validates the user with our custom logic
+//add the service to our services using singleton as best practice (no need for more instances one is enough)
+//add the policy to the application then call it in annotation on the endpoint
+//note we can add a string in the requirment it will be defined as a claim the user must have to pass the validation (claim type)
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\getpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\getpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\getpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\getpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyfordelete\\deletepolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyfordelete\\deletepolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyfordelete\\deletepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyfordelete\\deletepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyforput\\putpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyforput\\putpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyforput\\putpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyforput\\putpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyforpost\\postpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyforpost\\postpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyforpost\\postpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyforpost\\postpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyforget\\getpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyforget\\getpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\policies\\policyforget\\getpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|solutionrelative:user managment system\\policies\\policyforget\\getpolicyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B518FDDD-A8DD-49E0-ACEF-37BC096E23F5}|User managment system\\User managment system.csproj|c:\\users\\ebrahim.mohsen\\source\\repos\\user managment system\\user managment system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,33 +81,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeletePolicyHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForDelete\\DeletePolicyHandler.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForDelete\\DeletePolicyHandler.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForDelete\\DeletePolicyHandler.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForDelete\\DeletePolicyHandler.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:18:15.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeletePermission.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForDelete\\DeletePermission.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForDelete\\DeletePermission.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForDelete\\DeletePermission.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForDelete\\DeletePermission.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:18:01.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PutPermission.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPut\\PutPermission.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForPut\\PutPermission.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPut\\PutPermission.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForPut\\PutPermission.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:17:08.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PutPolicyHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPut\\PutPolicyHandler.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForPut\\PutPolicyHandler.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPut\\PutPolicyHandler.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForPut\\PutPolicyHandler.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:16:59.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PostPolicyHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPost\\PostPolicyHandler.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForPost\\PostPolicyHandler.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPost\\PostPolicyHandler.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForPost\\PostPolicyHandler.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:14:54.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PostPermission.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPost\\PostPermission.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForPost\\PostPermission.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForPost\\PostPermission.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForPost\\PostPermission.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:14:38.655Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "GetPolicyHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\GetPolicyHandler.cs",
-              "RelativeDocumentMoniker": "User managment system\\Policies\\GetPolicyHandler.cs",
-              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\GetPolicyHandler.cs*",
-              "RelativeToolTip": "User managment system\\Policies\\GetPolicyHandler.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForGet\\GetPolicyHandler.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForGet\\GetPolicyHandler.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForGet\\GetPolicyHandler.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForGet\\GetPolicyHandler.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T11:31:29.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "GetPermission.cs",
-              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\GetPermission.cs",
-              "RelativeDocumentMoniker": "User managment system\\Policies\\GetPermission.cs",
-              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\GetPermission.cs",
-              "RelativeToolTip": "User managment system\\Policies\\GetPermission.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForGet\\GetPermission.cs",
+              "RelativeDocumentMoniker": "User managment system\\Policies\\PolicyForGet\\GetPermission.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Policies\\PolicyForGet\\GetPermission.cs*",
+              "RelativeToolTip": "User managment system\\Policies\\PolicyForGet\\GetPermission.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T11:17:59.674Z",
@@ -91,17 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.users [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_EBRAHIM.MOHSEN_DOCUMENTS_USERDB.MDF/True/SqlTable/dbo.users.sql",
-              "ToolTip": "dbo.users [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-26T09:46:35.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Models\\User.cs",
               "RelativeDocumentMoniker": "User managment system\\Models\\User.cs",
@@ -114,7 +206,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Program.cs",
+              "RelativeDocumentMoniker": "User managment system\\Program.cs",
+              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Program.cs*",
+              "RelativeToolTip": "User managment system\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T08:18:38.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbo.users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_EBRAHIM.MOHSEN_DOCUMENTS_USERDB.MDF/True/SqlTable/dbo.users.sql",
+              "ToolTip": "dbo.users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-26T09:46:35.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "User managment system\\Controllers\\UserController.cs",
@@ -127,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "IUserRepo.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Repositories\\Interfaces\\IUserRepo.cs",
               "RelativeDocumentMoniker": "User managment system\\Repositories\\Interfaces\\IUserRepo.cs",
@@ -140,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Auth.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Repositories\\Auth.cs",
               "RelativeDocumentMoniker": "User managment system\\Repositories\\Auth.cs",
@@ -153,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "InitDb.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Data\\InitDb.cs",
               "RelativeDocumentMoniker": "User managment system\\Data\\InitDb.cs",
@@ -166,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "20240926084416_init.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Migrations\\20240926084416_init.cs",
               "RelativeDocumentMoniker": "User managment system\\Migrations\\20240926084416_init.cs",
@@ -179,20 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Program.cs",
-              "RelativeDocumentMoniker": "User managment system\\Program.cs",
-              "ToolTip": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Program.cs",
-              "RelativeToolTip": "User managment system\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T08:18:38.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "User managment system\\Models\\AppDbContext.cs",
@@ -205,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Group.cs",
               "DocumentMoniker": "C:\\Users\\Ebrahim.Mohsen\\source\\repos\\User managment system\\User managment system\\Models\\Group.cs",
               "RelativeDocumentMoniker": "User managment system\\Models\\Group.cs",
