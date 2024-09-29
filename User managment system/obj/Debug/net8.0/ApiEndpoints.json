@@ -1,5 +1,120 @@
 [
   {
+    "ContainingType": "User_managment_system.Controllers.TasksController",
+    "Method": "CreateTask",
+    "RelativePath": "api/Tasks/CreateTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "task",
+        "Type": "User_managment_system.ViewModels.UserTaskSet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.TasksController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/Tasks/DeleteTask",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.TasksController",
+    "Method": "GetTaskById",
+    "RelativePath": "api/Tasks/GetTask{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.TasksController",
+    "Method": "GetTasks",
+    "RelativePath": "api/Tasks/GetTasks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.TasksController",
+    "Method": "UpdateTask",
+    "RelativePath": "api/Tasks/UpdateTask",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "task",
+        "Type": "User_managment_system.ViewModels.UserTaskSet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.UserController",
+    "Method": "CreateGroup",
+    "RelativePath": "api/User/CreateGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "User_managment_system.ViewModels.GroupSet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.UserController",
+    "Method": "GetGroups",
+    "RelativePath": "api/User/GetGroups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/User/GetUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "User_managment_system.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/Login",
@@ -8,14 +123,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "user",
+        "Type": "User_managment_system.ViewModels.LoginDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -38,12 +148,23 @@
   },
   {
     "ContainingType": "User_managment_system.Controllers.UserController",
-    "Method": "test",
-    "RelativePath": "api/User/test",
-    "HttpMethod": "GET",
+    "Method": "UpdateUserGroup",
+    "RelativePath": "api/User/UpdateUserGroup",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "GroupId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

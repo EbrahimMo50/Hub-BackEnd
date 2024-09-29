@@ -8,7 +8,12 @@ namespace User_managment_system.Repositories
 {
     public class Auth
     {
-        public string GenerateToken(User user)
+        private readonly AppDbContext _context;
+        public Auth(AppDbContext context)
+        {
+            _context = context;
+        }
+        public string GenerateToken(Models.User user)
         {
             var handler = new JwtSecurityTokenHandler();
 
@@ -19,6 +24,7 @@ namespace User_managment_system.Repositories
 
             //uses private key to start the token
             var key = Encoding.ASCII.GetBytes(PrivateKey);
+
             var credentials = new SigningCredentials(
                 new SymmetricSecurityKey(key),
                 SecurityAlgorithms.HmacSha256Signature);
@@ -35,15 +41,24 @@ namespace User_managment_system.Repositories
             return handler.WriteToken(token);
         }
 
-        private static ClaimsIdentity GenerateClaims(User user)
+        private ClaimsIdentity GenerateClaims(Models.User user)
         {
             var claims = new ClaimsIdentity();
             claims.AddClaim(new Claim(ClaimTypes.Name, user.Name));
             claims.AddClaim(new Claim(ClaimTypes.Email, user.Email));
             if(user.Group != null)
+            {
                 claims.AddClaim(new Claim("groupId", user.Group.Id.ToString()));
+                var group = _context.Groups.FirstOrDefault(g => g.Id == user.Group.Id);  
+                if(group != null)
+                    foreach(var permission in group.Validations)
+                        claims.AddClaim(new Claim(permission + "Permission", "true"));
+            }
+               
             else
                 claims.AddClaim(new Claim("groupId", ""));
+
+            
             return claims;
         }
     }

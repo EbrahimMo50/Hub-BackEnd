@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using User_managment_system.Repositories.Interfaces;
+using User_managment_system.Repositories.User;
 using User_managment_system.ViewModels;
 
 namespace User_managment_system.Controllers
@@ -17,9 +17,9 @@ namespace User_managment_system.Controllers
         }
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login(string email,string password)
+        public async Task<IActionResult> Login(LoginDto user)           //created a login dto as a test to see if single value types are looked for in the header or not there is a problem 415 with postman/front
         {
-            var result = await _repo.Login(email, password);  
+            var result = await _repo.Login(user.Email, user.Password);  
             if(result == "404")
                 return NotFound("user was not found");
 
@@ -33,11 +33,33 @@ namespace User_managment_system.Controllers
             return Ok();
         }
 
-        [HttpGet("test")]
-        [Authorize(Policy = "GetPolicy,PutPolicy,DeletePolicy")]
-        public IActionResult test()
+        [HttpPut("UpdateUserGroup")]
+        [Authorize(Policy = "PutPolicy")]
+        public IActionResult UpdateUserGroup(int UserId,int GroupId)
         {
+            _repo.UpdateUserGroup(UserId,GroupId);
             return Ok();
         }
+
+        [HttpPost("CreateGroup")]
+        [Authorize(Policy = "PostPolicy")]
+        public IActionResult CreateGroup(GroupSet group)
+        {
+            _repo.CreateGroup(group);
+            return Ok();
+        }
+
+        [HttpGet("GetUsers")]
+        public async Task<IActionResult> GetUsers()
+        {
+            return Ok(await _repo.GetUsers());
+        }
+
+        [HttpGet("GetGroups")]
+        public async Task<IActionResult> GetGroups()
+        {
+            return Ok(await _repo.GetGroups());
+        }
+
     }
 }

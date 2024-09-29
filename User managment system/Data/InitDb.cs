@@ -2,22 +2,22 @@
 
 namespace User_managment_system.Data
 {
-    public static class InitDb
+    public class InitDb(AppDbContext context)
     {
-        public static void Init()
+        private readonly AppDbContext _context = context;
+        public void Init()
         { 
-            AppDbContext context = new AppDbContext();
 
-            if (!context.Users.Any()) {             
+            if (!_context.Users.Any()) {             
                 User admin = new User() { Name = "admin", Email = "a@gmail.com", Password = "1234"};
 
                 Group admins = new Group() { Name = "Admins", Validations = new List<string> { "get", "put", "delete", "post" }, Users = new List<User> { admin } };
 
                 admin.Group = admins;
            
-                context.Users.Add(admin);
-                context.Groups.Add(admins);
-                context.SaveChanges();
+                _context.Users.Add(admin);
+                _context.Groups.Add(admins);
+                _context.SaveChanges();
             }
         }
     }

@@ -10,7 +10,7 @@ namespace User_managment_system.ViewModels
 
         public User ToUser()
         {
-            return new User() { Name = this.Name, Email = this.Email , Password = this.Password};
+            return new User() { Name = this.Name, Email = this.Email , Password = this.Password , Group = null};
         }
     }
 
