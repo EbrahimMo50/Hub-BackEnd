@@ -30,11 +30,19 @@ namespace User_managment_system.Repositories.User
             return _auth.GenerateToken(user);
         }
 
-        public void Register(UserSet user)
+        public string Register(UserSet user)
         {
-            var User = user.ToUser();
-            _context.Users.Add(User);
-            _context.SaveChanges();
+            try
+            {
+                var User = user.ToUser();
+                _context.Users.Add(User);
+                _context.SaveChanges();
+                return "200";
+            }
+            catch (Exception ex) 
+            { 
+                return ex.Message;
+            }
         }
 
         public void UpdateUserGroup(int userId, int groupId)

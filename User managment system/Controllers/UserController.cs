@@ -29,8 +29,12 @@ namespace User_managment_system.Controllers
         [HttpPost("Register")]
         public IActionResult Register(UserSet user)
         {
-            _repo.Register(user);
-            return Ok();
+            var res = _repo.Register(user);
+            if(res == "200")
+                return Ok();
+
+            else 
+                return BadRequest(res);
         }
 
         [HttpPut("UpdateUserGroup")]
