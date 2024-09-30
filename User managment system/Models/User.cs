@@ -1,5 +1,8 @@
-﻿namespace User_managment_system.Models
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace User_managment_system.Models
 {
+    [Index(nameof(Email), IsUnique = true)]
     public class User
     {
         public int Id { get; set; }

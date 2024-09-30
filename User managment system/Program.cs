@@ -33,7 +33,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<AppDbContext>(
-    options=>options.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Ebrahim.Mohsen\\Documents\\UserDb.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True")
+    options=>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"))
     );
 
 builder.Services.AddScoped<IUserRepo,UserRepo>();
