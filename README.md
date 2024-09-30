@@ -9,7 +9,8 @@ The project is served right, all services are injected and decoupled, the lifeti
 Some security consideration might be adjusted and the JWT to be placed in an HttpOnly cookie
 
 Not all possible exceptions are handled, some transactions could fail need to analyze again, database behaviour and return types are clear and the exceptions are handled
- 
+
+I REALLY need to put the .vs on the ignore
 ## FrontEnd
 
 to manifest the app serve the front 
