@@ -35,21 +35,24 @@ namespace User_managment_system.Controllers
         [Authorize(Policy = "PostPolicy")]
         public IActionResult CreateTask(UserTaskSet task)
         {
-            return Ok(_repo.CreateTask(task));
+            _repo.CreateTask(task);
+            return Ok();
         }
 
         [HttpPut("UpdateTask")]
         [Authorize(Policy = "PutPolicy")]
         public IActionResult UpdateTask(int Id, UserTaskSet task)
         {
-            return Ok(_repo.UpdateTask(Id,task));
+            _repo.UpdateTask(Id, task);
+            return Ok();
         }
 
         [HttpDelete("DeleteTask")]
         [Authorize(Policy = "DeletePolicy")]
         public IActionResult DeleteTask(int Id)
         {
-            return Ok(_repo.DeleteTask(Id));
+            _repo.DeleteTask(Id);
+            return Ok();
         }
     }
 }
