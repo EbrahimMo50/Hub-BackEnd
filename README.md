@@ -4,7 +4,7 @@ The app manages users gives them task and allows them to create it, with custom 
 
 ## state
 
-The project is served right, all services are injected and decoupled, the lifetime of the services was consideably choosen, the database design and init is optimal (auto migration is missing upon deployment)
+The project is served right, all services are injected and decoupled, the lifetime of the services was consideably choosen, the database design and init is optimal 
 
 Some security consideration might be adjusted and the JWT to be placed in an HttpOnly cookie
 
