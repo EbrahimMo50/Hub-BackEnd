@@ -8,25 +8,21 @@ namespace User_managment_system.Repositories.UserTask
     public class TaskRepo(AppDbContext context) : ITaskRepo
     {
         private readonly AppDbContext _context = context;
-        public async Task CreateTask(UserTaskSet task)
+        public void CreateTask(UserTaskSet task)
         {
-            await _context.Tasks.AddAsync(task.ToTask());
-            await _context.SaveChangesAsync();
+            _context.Tasks.Add(task.ToTask());
+            _context.SaveChanges();
         }
 
         //fire-and-forget trial
-        public Task DeleteTask(int id)
+        public void DeleteTask(int id)
         {
-            Task.Run(() =>
+            var task = _context.Tasks.FirstOrDefault(t => t.Id == id);
+            if (task != null)
             {
-                var task = _context.Tasks.FirstOrDefault(t => t.Id == id);
-                if (task != null)
-                {
-                    _context.Tasks.Remove(task);
-                    _context.SaveChanges();
-                }
-            });
-            return Task.CompletedTask;
+                _context.Tasks.Remove(task);
+                _context.SaveChanges();
+            }
         }
 
         public async Task<List<Models.UserTask>> GetAllTasks()

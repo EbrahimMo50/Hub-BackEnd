@@ -1,5 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security;
 using System.Security.Claims;
 using System.Text;
 using User_managment_system.Models;
@@ -49,12 +50,22 @@ namespace User_managment_system.Repositories
             if(user.Group != null)
             {
                 claims.AddClaim(new Claim("groupId", user.Group.Id.ToString()));
+
                 var group = _context.Groups.FirstOrDefault(g => g.Id == user.Group.Id);  
                 if(group != null)
-                    foreach(var permission in group.Validations)
-                        claims.AddClaim(new Claim(permission + "Permission", "true"));
+                {
+                    claims.AddClaim(new Claim("getPermission", group.Validations.Contains("get") ? "true" : "false"));
+                    claims.AddClaim(new Claim("postPermission", group.Validations.Contains("post") ? "true" : "false"));
+                    claims.AddClaim(new Claim("putPermission", group.Validations.Contains("put") ? "true" : "false"));
+                    claims.AddClaim(new Claim("deletePermission", group.Validations.Contains("delete") ? "true" : "false"));
+                }
+
+                //foreach(var permission in group.Validations)
+                //    claims.AddClaim(new Claim(permission + "Permission", "1"));
+
+                //to keep the consistancy of the payload will keep the claims in all users not in the users whom have it only and add a bool to it
             }
-               
+
             else
                 claims.AddClaim(new Claim("groupId", ""));
 

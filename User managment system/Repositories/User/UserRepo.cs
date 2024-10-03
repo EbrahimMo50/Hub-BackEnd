@@ -59,7 +59,7 @@ namespace User_managment_system.Repositories.User
 
         public async Task<List<Models.User>> GetUsers()
         {
-            foreach (var user in _context.Users.ToList())
+            foreach (var user in _context.Users.Include(u => u.Group).ToList())
             {
                 Console.WriteLine(user.Name);
             }
