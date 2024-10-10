@@ -5,6 +5,7 @@ namespace User_managment_system.ViewModels
     public class GroupSet
     {
         public string Name { get; set; }    
+        public List<int> UsersId { get; set; }
         public List<string> Validations { get; set; } = new List<string>();
 
         public Group ToGroup()
