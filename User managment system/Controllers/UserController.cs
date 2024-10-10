@@ -64,6 +64,12 @@ namespace User_managment_system.Controllers
         {
             return Ok(await _repo.GetGroups());
         }
-
+        [HttpPut("UpdateUser")]
+        [Authorize("PutPolicy")]
+        public IActionResult UpdateUser(int Id, UserSet user)
+        {
+            _repo.UpdateUser(Id,user);
+            return Ok();
+        }
     }
 }

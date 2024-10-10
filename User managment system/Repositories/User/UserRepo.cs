@@ -72,5 +72,17 @@ namespace User_managment_system.Repositories.User
         {
             return await _context.Groups.Include(x => x.Users).ToListAsync() ?? [];
         }
+
+        public void UpdateUser(int Id, UserSet newUser)
+        {
+            var user = _context.Users.FirstOrDefault(x => x.Id == Id);
+            if(user != null)
+            {
+                user.Email = newUser.Email;
+                user.Password = newUser.Password;
+                user.Name = newUser.Name;
+                _context.SaveChanges();
+            }
+        }
     }
 }

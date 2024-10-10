@@ -148,6 +148,27 @@
   },
   {
     "ContainingType": "User_managment_system.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/User/UpdateUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "user",
+        "Type": "User_managment_system.ViewModels.UserSet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.UserController",
     "Method": "UpdateUserGroup",
     "RelativePath": "api/User/UpdateUserGroup",
     "HttpMethod": "PUT",

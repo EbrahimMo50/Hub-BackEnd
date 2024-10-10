@@ -10,5 +10,6 @@ namespace User_managment_system.Repositories.User
         public void CreateGroup(GroupSet group);
         public Task<List<UserGet>> GetUsers();
         public Task<List<Models.Group>> GetGroups();
+        public void UpdateUser(int Id, UserSet newUser);
     }
 }

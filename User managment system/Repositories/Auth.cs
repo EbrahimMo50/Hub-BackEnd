@@ -47,6 +47,8 @@ namespace User_managment_system.Repositories
             var claims = new ClaimsIdentity();
             claims.AddClaim(new Claim(ClaimTypes.Name, user.Name));
             claims.AddClaim(new Claim(ClaimTypes.Email, user.Email));
+            claims.AddClaim(new Claim("password", user.Password));
+            claims.AddClaim(new Claim("id", user.Id.ToString()));
             if(user.Group != null)
             {
                 claims.AddClaim(new Claim("groupId", user.Group.Id.ToString()));
