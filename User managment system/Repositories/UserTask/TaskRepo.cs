@@ -40,15 +40,15 @@ namespace User_managment_system.Repositories.UserTask
             return null;
         }
 
-        public async Task UpdateTask(int id,  UserTaskSet task)
+        public void UpdateTask(int id,  UserTaskSet task)
         {
-            var myTask = await _context.Tasks.FirstOrDefaultAsync(t => t.Id == id);
+            var myTask = _context.Tasks.FirstOrDefault(t => t.Id == id);
             if(myTask != null)
             {
                 myTask.Description = task.Description;
-                myTask.Title = task.Title; ;
+                myTask.Title = task.Title; 
             }
-            
+            _context.SaveChanges();
         }
     }
 }

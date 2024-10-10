@@ -57,13 +57,15 @@ namespace User_managment_system.Repositories.User
             }
         }
 
-        public async Task<List<Models.User>> GetUsers()
+        public async Task<List<UserGet>> GetUsers()
         {
-            foreach (var user in _context.Users.Include(u => u.Group).ToList())
+            var users = await _context.Users.Include(x => x.Group).ToListAsync() ?? []; 
+            var userDto = new List<UserGet>();
+            foreach (var user in users)
             {
-                Console.WriteLine(user.Name);
+                userDto.Add(UserGet.Transform(user));
             }
-            return await _context.Users.ToListAsync() ?? [];
+            return userDto ?? [];
         }
 
         public async Task<List<Group>> GetGroups()
