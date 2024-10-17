@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "User_managment_system.Controllers.GroupController",
+    "Method": "CreateGroup",
+    "RelativePath": "api/Group/CreateGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "User_managment_system.ViewModels.GroupSet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.GroupController",
+    "Method": "DeleteGroup",
+    "RelativePath": "api/Group/DeleteGroup",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.GroupController",
+    "Method": "GetGroups",
+    "RelativePath": "api/Group/GetAllGroups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.GroupController",
+    "Method": "GetGroupById",
+    "RelativePath": "api/Group/GetGroupById{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "User_managment_system.Controllers.GroupController",
+    "Method": "UpdateGroup",
+    "RelativePath": "api/Group/UpdateGroup",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "group",
+        "Type": "User_managment_system.ViewModels.GroupSet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "User_managment_system.Controllers.TasksController",
     "Method": "CreateTask",
     "RelativePath": "api/Tasks/CreateTask",
@@ -73,22 +152,6 @@
       {
         "Name": "task",
         "Type": "User_managment_system.ViewModels.UserTaskSet",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "User_managment_system.Controllers.UserController",
-    "Method": "CreateGroup",
-    "RelativePath": "api/User/CreateGroup",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "group",
-        "Type": "User_managment_system.ViewModels.GroupSet",
         "IsRequired": true
       }
     ],

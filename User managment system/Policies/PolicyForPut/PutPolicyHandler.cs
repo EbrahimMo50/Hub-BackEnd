@@ -11,7 +11,7 @@ namespace User_managment_system.Policies
         {
             var GroupClaims = context.User.Claims.FirstOrDefault(x => x.Type == "groupId");
 
-            if (GroupClaims == null)
+            if (GroupClaims == null || GroupClaims.Value == "")
                 return Task.CompletedTask;
 
             var groupId = int.Parse(GroupClaims.Value);

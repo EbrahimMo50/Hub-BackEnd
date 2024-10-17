@@ -10,6 +10,7 @@ using User_managment_system.Policies;
 using User_managment_system.Policies.PolicyForGet;
 using User_managment_system.Policies.PolicyForPost;
 using User_managment_system.Repositories;
+using User_managment_system.Repositories.GroupService;
 using User_managment_system.Repositories.User;
 using User_managment_system.Repositories.UserTask;
 
@@ -38,6 +39,7 @@ builder.Services.AddDbContext<AppDbContext>(
 
 builder.Services.AddScoped<IUserRepo,UserRepo>();
 builder.Services.AddScoped<ITaskRepo, TaskRepo>();
+builder.Services.AddScoped<IGroupRepo, GroupRepo>();
 
 builder.Services.AddScoped<Auth>();
 builder.Services.AddScoped<IAuthorizationHandler, GetPolicyHandler>();

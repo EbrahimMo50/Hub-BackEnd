@@ -15,25 +15,6 @@ namespace User_managment_system.Repositories.User
             _auth = auth;
         }
 
-        public void CreateGroup(GroupSet group)
-        {
-            _context.Groups.Add(group.ToGroup());
-            _context.SaveChanges();
-
-            //this is the real group we will add the users to (mass insertion)
-            var physicalGroup = _context.Groups.FirstOrDefault(g => g.Name == group.Name && g.Validations == g.Validations);
-
-            foreach(var id in group.UsersId)
-            {
-                var user = _context.Users.Include(x => x.Group).FirstOrDefault(x => x.Id == id);
-                if(physicalGroup != null && user != null)
-                {
-                    user.Group = physicalGroup;
-                    physicalGroup.Users.Add(user);
-                } 
-            }
-            _context.SaveChanges();
-        }
 
         public async Task<string> Login(string email, string password)
         {

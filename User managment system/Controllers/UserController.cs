@@ -38,18 +38,10 @@ namespace User_managment_system.Controllers
         }
 
         [HttpPut("UpdateUserGroup")]
-        [Authorize(Policy = "PutPolicy")]
+        //[Authorize(Policy = "PutPolicy")]
         public IActionResult UpdateUserGroup(int UserId,int GroupId)
         {
             _repo.UpdateUserGroup(UserId,GroupId);
-            return Ok();
-        }
-
-        [HttpPost("CreateGroup")]
-        [Authorize(Policy = "PostPolicy")]
-        public IActionResult CreateGroup(GroupSet group)
-        {
-            _repo.CreateGroup(group);
             return Ok();
         }
 

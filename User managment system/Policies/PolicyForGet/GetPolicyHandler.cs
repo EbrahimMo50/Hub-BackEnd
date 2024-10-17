@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 using User_managment_system.Models;
 
 namespace User_managment_system.Policies.PolicyForGet
@@ -9,10 +10,11 @@ namespace User_managment_system.Policies.PolicyForGet
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, GetPermission requirement)
         {
             var GroupClaims = context.User.Claims.FirstOrDefault(x => x.Type == "groupId");
-
-            if (GroupClaims == null)
+            
+            if (GroupClaims == null || GroupClaims.Value == "")
                 return Task.CompletedTask;
-
+            
+            Console.WriteLine(GroupClaims.Value);
             var groupId = int.Parse(GroupClaims.Value);
 
             var group = _context.Groups.FirstOrDefault(g => g.Id == groupId);
